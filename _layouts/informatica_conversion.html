@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% include page-header.html %}
+{% include slider.html %}
+
+{# Technical capabilities boxes #}
+{% include boxes.html content=page.mapping_capabilities %}
+
+{# Process section with steps #}
+{% include process.html content=page.conversion_process %}
+
+{# Platform support grid #}
+{% include content-cards-grid.html content=page.platform_support %}
+
+{# Technical examples section #}
+{% include content-code-grid.html content=page.conversion_examples %}
+
+{# FAQ section #}
+{% include faq.html content=page.faq %}
+
+{# Call to action box #}
+{% include cta-box.html content=page.cta %}
