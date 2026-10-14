@@ -398,7 +398,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     btn.disabled=true; btn.textContent='Sending…';
     fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
       .then(function(r){
-        if(r.ok){window.location.href='https://calendar.app.google/2VFk5nRs8ufa8pZQA';}
+        if(r.ok){window.open('https://calendar.app.google/2VFk5nRs8ufa8pZQA','_blank');}
         else{btn.disabled=false;btn.textContent='Schedule a conversation →';}
       })
       .catch(function(){btn.disabled=false;btn.textContent='Schedule a conversation →';});
