@@ -11,7 +11,8 @@ keywords: >-
   ETL modernization, data architecture consulting, legacy ETL migration, cloud ETL,
   data pipeline tools, ETL framework, streaming data pipeline, low-code ETL,
   Informatica alternatives, ETL migration tools, data integration platform,
-  modern data architecture
+  modern data architecture,  convert Informatica mappings, PowerCenter SQL conversion,
+  migrate Informatica workflows, PowerCenter alternative solutions
 email: "info@datayoga.io"
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://deneb-jekyll.tortoizthemes.com" # the base hostname & protocol for your site, e.g. http://example.com

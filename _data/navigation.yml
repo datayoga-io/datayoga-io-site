@@ -11,19 +11,21 @@
 - text: Informatica Migration
   url: "#"
   submenu:
+    - text: Convert Informatica Mappings 
+      url: /convert-informatica-mappings/
     - text: Informatica to dbt
       url: /informatica-to-dbt-migration/ 
     - text: Informatica to Snowflake
-      url: /informatica-to-snowflake-migration
+      url: /informatica-to-snowflake-migration/
     - text: ETL Migration
-      url: /etl-migration
+      url: /etl-migration/
     - text: Migration Assessment
       url: /informatica-migration-assessment
 - text: Data Pipelines Framework
-  url: /datayoga-transform
+  url: /datayoga-transform/
 - text: About Us
-  url: /about
+  url: /about/
 - text: Resources
-  url: /resources
+  url: /resources/
 - text: Contact Us
-  url: /contact
+  url: /contact/
