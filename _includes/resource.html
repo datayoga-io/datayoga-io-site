@@ -1,0 +1,28 @@
+<!-- Start deneb_about section -->
+<section class="resource_section {% if include.section_class %} {{include.section_class}} {% endif %}">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-5">
+				<div class="deneb_img_box wow fadeInLeft" style="display:flex;flex-direction:column;justify-content:center">
+					<img src="{{ include.content.image | absolute_url }}" class="img-fluid" alt="">
+					<a href="{{ include.content.button.link }}" class="deneb_btn">{{ include.content.button.name }}</a> 
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="deneb_content_box wow fadeInRight">
+					<h2>{{ include.content.heading }}</h2>
+					<h3>{{ include.content.subheader }}</h3>
+					<br>
+					<p>{{ include.content.text2 }}</p>
+					<p>{{ include.content.text3 }}</p>
+					<p>{{ include.content.text4 }}</p>
+					<p>{{ include.content.text5 }}</p>
+					<p>{{ include.content.text6 }}</p>
+					<p>{{ include.content.text7 }}</p>
+					<p>{{ include.content.text8 }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End deneb_about section -->

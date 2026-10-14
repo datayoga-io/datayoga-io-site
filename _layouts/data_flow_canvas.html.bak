@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+{% include page-header.html %}
+{% include content-section-left.html content=page.section1 %}
+{% include content-section-right.html content=page.section2 %}

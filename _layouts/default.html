@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- All Meta -->
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="description" content="{{site.description}}">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- page title -->
+		<title>{% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</title>
+		<!-- Favicon Icon -->
+    	<link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | absolute_url }}" type="image/png">
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-TH9XLWX');</script>
+		<!-- End Google Tag Manager -->
+		<!-- All css -->
+		<!--Bootstrap css-->
+	    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | absolute_url }}">
+	    <!-- Fontawesome css -->
+	    <link rel="stylesheet" href="{{ "/assets/fonts/fontawesome/css/all.css" | absolute_url }}">
+	    <!-- slick fader css -->
+	    <link rel="stylesheet" href="{{ "/assets/css/slick.css" | absolute_url }}">
+	    <link rel="stylesheet" href="{{ "/assets/css/slick-theme.css" | absolute_url }}">
+	    <!-- sidebar-menu -->
+	    <link rel="stylesheet" href="{{ "/assets/css/sidebar-menu.css" | absolute_url }}">
+	    <!--animate css-->
+	    <link rel="stylesheet" href="{{ "/assets/css/animate.css" | absolute_url }}">
+	    <!--style css-->
+	    <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH9XLWX"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<!-- Preloader -->
+		{% if site.site_preloader %}
+		<div class="preloader">
+			<div class="lds-ripple">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		{% endif %}
+        {% include header.html %}
+
+        {{content}}
+         
+      
+        {% include footer.html %}
+		<!-- jquery  -->
+	    <script src="{{ "/assets/js/vendor/jquery-3.5.1.min.js" | absolute_url }}"></script>
+	    <!--modernizr js-->
+	    <script src="{{ "/assets/js/vendor/modernizr-3.6.0.min.js" | absolute_url }}"></script>
+	    <!-- Bootstrap js  -->
+	    <script src="{{ "/assets/js/vendor/bootstrap.min.js" | absolute_url }}"></script>
+	    <script src="{{ "/assets/js/vendor/popper.min.js" | absolute_url }}"></script>
+	    <!-- slick fader js  -->
+	    <script src="{{ "/assets/js/vendor/slick.min.js" | absolute_url }}"></script>
+	    <!-- isotope js  -->
+	    <script src="{{ "/assets/js/vendor/isotope.min.js" | absolute_url }}"></script>
+	    <!-- imageloaded js-->
+	    <script src="{{ "/assets/js/vendor/imagesloaded.min.js" | absolute_url }}"></script>
+	    <!--sidebar js-->
+	    <script src="{{ "/assets/js/vendor/sidebar-menu.js" | absolute_url }}"></script>
+	    <!--wow js-->
+	    <script src="{{ "/assets/js/vendor/wow.min.js" | absolute_url }}"></script>
+	    <!-- Disqus Comments js-->
+	    <script id="dsq-count-scr" src="//deneb-1.disqus.com/count.js" async></script>
+	    <!-- Simple Jekyll Search js-->
+	    <script src="{{ "/assets/js/simple-jekyll-search.min.js" | absolute_url }}"></script>
+	    <!-- custom js  -->
+	    <script src="{{ "/assets/js/custom.js" | absolute_url }}"></script>
+		<!-- added so that external links are opened in a new tab-->
+		<script>
+            document.querySelectorAll('a').forEach(a => {
+                if ((a.hostname !== window.location.hostname && a.hostname !== '') || 
+				a.getAttribute('target') === "_blank") {
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                }
+            });
+        </script>
+	</body>
+</html>

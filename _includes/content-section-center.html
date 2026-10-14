@@ -1,0 +1,20 @@
+
+  <!-- Start how_it_works section -->
+<section class="section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center">
+                    <h2>{{ include.content.heading }}</h2>
+                    <p>{{ include.content.text }}</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <img src="{{ include.content.image.src | absolute_url }}" class="img-fluid" alt="{{ include.content.image.alt }}">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End how_it_works section -->

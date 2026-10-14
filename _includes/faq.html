@@ -1,0 +1,30 @@
+<!-- Start deneb_faq section -->
+<section class="deneb_faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center">
+                    <h2>{{ include.content.heading }}</h2>
+                    <p>{{ include.content.text }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-10 mx-auto">
+                {% for qa in include.content.items %}
+                <div class="faq_item">
+                    <div class="faq_content">
+                        <div class="faq_question">
+                            <h4>{{ qa.question }}</h4>
+                        </div>
+                        <div class="faq_answer">
+                            <p>{{ qa.answer }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End deneb_faq section -->

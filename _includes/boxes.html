@@ -1,0 +1,46 @@
+<!-- Start deneb_pricing section -->
+<section class="deneb_pricing pricing_v1">
+	<div class="shape_v4">
+		<img src="{{ "/assets/images/shape/shape_11.png" | absolute_url }}" class="shape_11" alt="">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section_title text-center">
+					<h2>{{ include.content.heading }}</h2>
+					<p>{{ include.content.text }}</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			{% for list in include.content.list %}
+			<div class="box-wrapper col-lg-4 col-md-6 col-sm-12">
+				<div class="box wow fadeInUp">
+					<div class="icon">
+						<img src="{{ list.icon | absolute_url }}" class="img-fluid" alt="">
+					</div>
+					<div class="title">
+						<h3>{{ list.name }}</h3>
+					</div>
+					<div class="list">
+						<ul>
+							{% for listitem in list.listitem %}
+							<li>{{ listitem.name }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="price">
+						<h2>{{ list.price }}</h2>
+					</div>
+					{% if list.button %}
+					<div class="button_box">
+						<a href="{{ list.button.link }}" class="deneb_btn">{{ list.button.name }}</a>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- End deneb_pricing section -->

@@ -1,0 +1,31 @@
+#Please use the main menu items under the "text"
+# - text: Data Flow Canvas
+#   url: /data_flow_canvas
+#- text: Blog
+#  url: /blogp
+# submenu:
+#  - text: Blog Details
+# url: /wordpress-hosting
+#  - text: 404
+#   url: /404
+- text: Informatica Migration
+  url: "#"
+  submenu:
+    - text: Convert Informatica Mappings 
+      url: /convert-informatica-mappings/
+    - text: Informatica to dbt
+      url: /informatica-to-dbt-migration/ 
+    - text: Informatica to Snowflake
+      url: /informatica-to-snowflake-migration/
+    - text: ETL Migration
+      url: /etl-migration/
+    - text: Migration Assessment
+      url: /informatica-migration-assessment
+- text: Data Pipelines Framework
+  url: /datayoga-transform/
+- text: About Us
+  url: /about/
+- text: Resources
+  url: /resources/
+- text: Contact Us
+  url: /contact/

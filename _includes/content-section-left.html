@@ -1,0 +1,23 @@
+<!-- Start deneb_about section -->
+<section class="section_content_float section_padding {% if include.section_class %} {{include.section_class}} {% endif %}">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-7">
+				<div class="deneb_content_box wow fadeInLeft">
+					<h2>{{ include.content.heading }}</h2>
+					<p>{{ include.content.text }}</p>
+					<p>{{ include.content.text2 }}</p>
+					{%- if include.content.button -%}
+						<a href="{{ include.content.button.link }}" class="deneb_btn">{{ include.content.button.name }}</a>
+					{%- endif -%}
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="deneb_img_box wow fadeInRight" style="text-align:center">
+					<img src="{{ include.content.image.src | absolute_url }}" class="img-fluid" alt="{{ include.content.image.alt }}">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End deneb_about section -->

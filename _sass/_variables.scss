@@ -1,0 +1,24 @@
+// Font Family 
+
+$font1: 'Poppins', sans-serif;
+
+$font2: 'Montserrat', sans-serif;
+
+// Colors
+$white: #fff;
+
+$text: #7a808d;
+
+$title: #011a3e;
+
+$theme_color: #005BBB;
+// #6e61db;
+
+
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';

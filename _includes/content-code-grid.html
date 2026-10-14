@@ -1,0 +1,25 @@
+<!-- content-code-grid section -->
+<section class="content-code-grid section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center">
+                    <h2>{{ include.content.heading }}</h2>
+                    <p>{{ include.content.text }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for example in include.content.list %}
+            <div class="col-lg-4 col-md-6">
+                <div class="code_box wow fadeInUp">
+                    <h4>{{ example.title }}</h4>
+                    <div class="code_block">
+                        <pre><code class="yaml">{{ example.yaml }}</code></pre>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

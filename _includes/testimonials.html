@@ -1,0 +1,33 @@
+<!-- Start deneb_testimonial section -->
+<section class="deneb_testimonial testimonial_v1">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section_title text-center">
+					<h2>{{ page.testimonials.heading }}</h2>
+					<h3>{{ page.testimonials.description }}</h3>
+					<h3>{{ page.testimonials.description2 }}</h3>
+				</div>
+			</div>
+		</div>
+		<div class="testimonial_slide">
+			{% for list in page.testimonials.list %}
+			<div class="single_testimonial">
+				<div class="client_img">
+					<img src="{{ list.image | absolute_url }}" class="img-fluid" alt="">
+					<div class="qoute">
+						<i class="fas fa-quote-left"></i>
+					</div>
+				</div>
+				<div class="client_info">
+					<h3>{{ list.name }}</h3>
+					<h5>{{ list.position }}</h5>
+					<p>{{ list.text }}</p>
+					<p>{{"" }}</p>
+				</div>
+			</div>			
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- End deneb_testimonial section -->

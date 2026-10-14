@@ -1,0 +1,48 @@
+<!-- Start footer -->
+<footer class="deneb_footer">
+	<div class="widget_wrapper" style="background-image: url(/assets/images/footer_bg.png);">
+		<div class="container">
+				<div class="widget_title row widget widget_about" style="align-items:end">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<img src="{{site.site_logo}}" class="img-fluid" alt="{{site.title}}"/>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12">
+						<div class="widget_contact row justify-content-lg-end">
+							<div class="icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="info">
+								<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+								<!--<p><a href="mailto:services@deneb.com">services@deneb.com</a></p> -->
+							</div>
+						</div>
+					</div>
+
+				<!--
+				<ul class="social">
+					{% if site.facebook_url %}
+					<li><a href="{{site.facebook_url}}" target="__blank"><i class="fab fa-facebook-f"></i></a></li>
+					{% endif %}
+					{% if site.twitter_url %}
+					<li><a href="{{site.twitter_url}}" target="__blank"><i class="fab fa-twitter"></i></a></li>
+					{% endif %}
+					{% if site.instagram_url %}
+					<li><a href="{{site.instagram_url}}" target="__blank"><i class="fab fa-instagram"></i></a></li>
+					{% endif %}
+				</ul>
+				-->
+		</div>
+	</div>
+	<div class="copyright_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="copyright_text">
+						<p>{{ site.copyright }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End footer -->

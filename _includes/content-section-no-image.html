@@ -1,0 +1,16 @@
+<!-- Start deneb_about section -->
+<section class="section_content_float section_padding {% if include.section_class %} {{include.section_class}} {% endif %}">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="deneb_content_box wow fadeInRight">
+				<h2>{{ page.about.heading }}</h2>
+				<p>{{ page.about.text }}</p>
+				<p>{{ page.about.text2 }}</p>
+				{%- if include.content.button -%}
+					<a href="{{ include.content.button.link }}" class="deneb_btn">{{ include.content.button.name }}</a>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End deneb_about section -->

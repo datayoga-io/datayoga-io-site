@@ -1,0 +1,14 @@
+.content-cards-grid {
+    .card_box {
+        padding: 30px;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        
+        h4 {
+            margin-bottom: 15px;
+            color: $theme_color;
+        }
+    }
+}

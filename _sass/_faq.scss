@@ -1,0 +1,35 @@
+.deneb_faq .faq_item {
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.deneb_faq .faq_question h4 {
+    color: #2d3954;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.deneb_faq .faq_question h4:before {
+    content: "Q.";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: $theme_color;
+    font-weight: 700;
+}
+
+.deneb_faq .faq_answer {
+    padding-left: 35px;
+}
+
+.deneb_faq .faq_answer p {
+    color: #6e7684;
+    line-height: 1.8;
+    margin: 0;
+}

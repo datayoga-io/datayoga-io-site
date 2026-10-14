@@ -1,0 +1,44 @@
+.content-code-grid {
+       
+    .code_box {
+        height: 100%;
+        padding: 35px;
+        text-align: left;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+        
+        h4 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: $title;
+        }
+        
+        .code_block {
+            background: #f8f9fa;
+            border-radius: 4px;
+            padding: 15px;
+            border: 1px dashed rgb(9, 9, 10);  // Red to make it obvious
+            margin-top: 15px;
+            
+            pre {
+                margin: 0;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-family: monospace;
+                code {
+                    color: $text;
+                }
+            }
+        }
+    }
+
+    .section_title {
+        h2 {
+            position: relative;
+            &:after {
+                left: 40px;
+            }
+        }
+    }
+}

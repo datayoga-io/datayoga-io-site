@@ -1,0 +1,31 @@
+<!-- Start deneb_skill section -->
+<section class="deneb_skill">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-7">
+				<div class="section_title">
+					<h2>{{ page.our_skill.heading }}</h2>
+					<p>{{ page.our_skill.description }}</p>
+				</div>
+				<div class="skill_wrapper">
+					{% for list in page.our_skill.list %}
+					<div class="single_bar">
+						<div class="progress_title">
+							<h5>{{ list.name }}<span>{{ list.percentage }}</span></h5>
+						</div>
+						<div class="progress">
+							<div class="progress-bar wow slideInLeft" style="width: {{ list.percentage }};"><div class="dot"></div></div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="deneb_img_box">
+					<img src="{{ page.our_skill.image | absolute_url }}" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End deneb_skill section -->

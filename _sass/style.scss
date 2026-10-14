@@ -1,0 +1,47 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Deneb - A Digital Agency Jejyll Template
+    Template URI: 
+    Description: Deneb – Deneb is a Digital Agency Jekyll Template designed keeping in mind all types of agencies such as SEO Agency,Web Design Agency, Web Dev Agency etc. It comes with 6 Layered html files. All layers and objects are perfectly customizable and grouped properly. You can easily edit files and create custom designs.
+    Author: 
+    Author URI: 
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+
+
+// Variables
+@import 'variables';
+// Mixin
+@import 'mixin';
+// Common
+@import 'common';
+// Header
+@import 'header';
+// Banner
+@import 'banner';
+// Service
+@import 'service';
+// About
+@import 'about';
+// Project
+@import 'project';
+// Pricing
+@import 'boxes';
+// Testimonial
+@import 'testimonial';
+// blg
+@import 'blog';
+// contact
+@import 'contact';
+// Features
+@import 'features';
+// Footer
+@import 'footer';
+//FAQ
+@import 'faq';
+//new layouts
+@import "content-columns-list";
+@import "content-cards-grid";
+@import "content-code-grid";

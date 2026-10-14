@@ -1,0 +1,26 @@
+<!-- Start content-cards-grid section -->
+<section class="content-cards-grid section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center">
+                    <h2>{{ include.content.heading }}</h2>
+                    <p>{{ include.content.text }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            {% for card in include.content.list %}
+            <div class="col-lg-6 col-md-6">
+                <div class="card_box wow fadeInUp">
+                    <div class="card_content">
+                        <h4>{{ card.title }}</h4>
+                        <p>{{ card.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End content-cards-grid section -->

@@ -1,0 +1,35 @@
+<!-- Start content-columns-list section -->
+<section class="content-columns-list section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center">
+                    <h2>{{ include.content.heading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="content_box">
+                    <h3>{{ include.content.features_left.heading }}</h3>
+                    <ul class="content_list">
+                        {% for item in include.content.features_left.list %}
+                        <li><i class="fas fa-check"></i> {{ item.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="content_box">
+                    <h3>{{ include.content.features_right.heading }}</h3>
+                    <ul class="content_list">
+                        {% for item in include.content.features_right.list %}
+                        <li><i class="fas fa-check"></i> {{ item.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End content-columns-list section -->
